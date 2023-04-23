@@ -18,14 +18,14 @@ describe('Pruebas pagina To Do List', () => {
     })
     it('4.Editar tarea', () => {
       cy.get('label').dblclick()
-      cy.get('editing').type('{selectall}{backspace}')
-      cy.get('editing').type('comprar leche{enter}')
-      cy.get('.editing').contains('comprar leche')
+      cy.get('.editing').type('{selectall}{backspace}')
+      cy.get('.editing').type('comprar leche{enter}')
+      cy.get('.todo-list').contains('comprar leche')
     })
     it('5.Borrar tarea', () => {
       cy.get('label').trigger('mouseover')
-      cy.get('.destroy').invoke('show').click() //fala terminar;luego Nico nos pasará su código
-      
+      cy.get('.destroy').invoke('show').click({ force: true })
+      cy.get('.new-todo')
     })
     it('6.Filtrar tareas', () => {
       cy.get('.new-todo').type('comprar leche{enter}')
