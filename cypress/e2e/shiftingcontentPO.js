@@ -15,4 +15,16 @@ describe('Pruebas de Shifting Content', () => {
     it('Comprobar Home en la tabla', () => {
       shiftingContentMenuElementPage.comprobarHome()
     })
+    it('Comprobar About en la tabla', () => {
+        shiftingContentMenuElementPage.comprobarAbout()
+      })
+    it('Comprobar Contact Us en la tabla', () => {
+        shiftingContentMenuElementPage.comprobarContactUs()
+      })
+    it('Comprobar Portfolio en la tabla', () => {
+        shiftingContentMenuElementPage.comprobarPortfolio()
+      }) 
+    it('Comprobar Gallery en la tabla', () => {
+        shiftingContentMenuElementPage.comprobarGallery()
+      })
   })
