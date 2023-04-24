@@ -13,6 +13,6 @@ describe('Pruebas de Shifting Content', () => {
       shiftingContentPage.clicarMenuElement()
     })
     it('Comprobr los elementos de la tabla', () => {      
-        menuElement.comprobarElement('5')        
+        shiftingContentMenuElementPage.comprobarElement('5')        
     })
   })
