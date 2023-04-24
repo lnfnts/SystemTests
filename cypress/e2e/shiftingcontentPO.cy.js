@@ -12,19 +12,7 @@ describe('Pruebas de Shifting Content', () => {
       mainPage.clicarShiftingContent()
       shiftingContentPage.clicarMenuElement()
     })
-    it('Comprobar Home en la tabla', () => {
-      shiftingContentMenuElementPage.comprobarHome()
+    it('Comprobr los elementos de la tabla', () => {      
+        menuElement.comprobarElement('5')        
     })
-    it('Comprobar About en la tabla', () => {
-        shiftingContentMenuElementPage.comprobarAbout()
-      })
-    it('Comprobar Contact Us en la tabla', () => {
-        shiftingContentMenuElementPage.comprobarContactUs()
-      })
-    it('Comprobar Portfolio en la tabla', () => {
-        shiftingContentMenuElementPage.comprobarPortfolio()
-      }) 
-    it('Comprobar Gallery en la tabla', () => {
-        shiftingContentMenuElementPage.comprobarGallery()
-      })
   })
