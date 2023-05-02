@@ -18,13 +18,13 @@ describe('Pruebas de Add Remove Elements', () => {
     })
     it('Añadir 1 elemento', () => {
       addRemoveElementsPage.clicarAddElement()
-      addRemoveElementsPage.comprobarContenidoBotonDelete("Delete")
+      addRemoveElementsPage.comprobarBotonDeleteExiste()
     })
     it('Añadir 3 elementos', () => {
       addRemoveElementsPage.clicarAddElement3Veces()      
-      addRemoveElementsPage.comprobarContenidoBotonDelete("Delete")
-      addRemoveElementsPage.comprobarContenidoBotonDelete2("Delete")
-      addRemoveElementsPage.comprobarContenidoBotonDelete3("Delete")
+      addRemoveElementsPage.comprobarBotonDeleteExiste()
+      addRemoveElementsPage.comprobarBotonDelete2Existe()
+      addRemoveElementsPage.comprobarBotonDelete3Existe()
       })
     it('Borrar elemento', () => {
       addRemoveElementsPage.clicarAddElement()

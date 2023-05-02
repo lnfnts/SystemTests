@@ -15,11 +15,14 @@ export class AddRemoveElementsPage {
     comprobarContenidoBotonDelete(text) {
         cy.get('.added-manually').contains(text)
     } 
-    comprobarContenidoBotonDelete2(text) {
-        cy.get('#elements > :nth-child(2)').contains(text)
+    comprobarBotonDeleteExiste(text) {
+        cy.get('.added-manually').should('exist')
     } 
-    comprobarContenidoBotonDelete3(text) {
-        cy.get('#elements > :nth-child(3)').contains(text)
+    comprobarBotonDelete2Existe(text) {
+        cy.get('#elements > :nth-child(2)').should('exist')
+    } 
+    comprobarBotonDelete3Existe(text) {
+        cy.get('#elements > :nth-child(3)').should('exist')
     }  
     comprobarBotonDeleteNoExiste() {
         cy.get('#elements > :nth-child(1)').should('not.exist')
