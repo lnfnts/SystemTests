@@ -12,4 +12,7 @@ export class MainPage {
     clicarMultipleWindows () {
         cy.get(':nth-child(33) > a').click()
     }
+    clicarAddRemoveElements () {
+        cy.get('ul > :nth-child(2) > a').click()
+    }
 }

@@ -12,7 +12,7 @@ describe('Pruebas de Multiple Windows', () => {
         mainPage.clicarMultipleWindows()
         multipleWindowsPage.clicarClickHere()
       })
-      it('Comprobr contenido', () => {      
+      it('Comprobar contenido', () => {      
         multipleWindowsNewPage.comprobarMensaje('New Window')        
       })
     })

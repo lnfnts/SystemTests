@@ -12,7 +12,7 @@ describe('Pruebas de Shifting Content', () => {
       mainPage.clicarShiftingContent()
       shiftingContentPage.clicarMenuElement()
     })
-    it('Comprobr los elementos de la tabla', () => {      
+    it('Comprobar los elementos de la tabla', () => {      
         shiftingContentMenuElementPage.comprobarElement('5')        
     })
   })
